@@ -272,3 +272,54 @@
 \end{figure}
 
 \subsubsection{Application composition-Modell}
+\begin{itemize}
+    \item Prototypenentwicklung, Projekte mit viel Wiederverwendung 
+    \item \textbf{standard estimates of developer productivity in application (oject) points/month}
+    \item Nutzung von CASE berücksichtigen
+    \item \textbf{Gleichung:} $PM = (NAP \times (1-\%reuse/100))/PROD$
+    \begin{itemize}
+        \item $PM$: Aufwand (Monate Arbeitszeit pro Person) 
+        \item $NAP$: Anzahl der application points 
+        \item $PROD$: Produktivität
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Frühes Designmodell}
+\begin{itemize}
+    \item Abschätzung nach Einigung über Anforderungen 
+    \item basiert auf Standartformel für algorithmische Modelle: 
+    \begin{itemize}
+        \item $PM = A \times Size^{B} \times M$
+        \begin{itemize}
+            \item $M = PERS \times RCPX \times RUSE \times PDIF \times PREX \times FCIL \times SCED$
+            \item $A$: beginnt bei 2.94 [KLOC]
+            \item $B$: 1.1 - 1.24 (abhängig von Neuartigkeit des Projektes, Flexibilität der Entwicklung Risikomanagement, Reife des Prozesses)
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Multplikatoren}
+\begin{itemize}
+    \item Produktattribute
+    \begin{itemize}
+        \item geforderte Eigenschaften der Software 
+    \end{itemize}
+    \item Computer-Attribute
+    \begin{itemize}
+        \item Eisnchränkungen durch Hardware
+    \end{itemize}
+    \item Personalattribute
+    \begin{itemize}
+        \item Erfahrung und Fähigkeit der Entwickler
+    \end{itemize}
+    \item Projektattribute 
+    \begin{itemize}
+        \item Eigenschaften des Entwicklungsprozesses
+    \end{itemize}
+\end{itemize}
+
+\subsection{Key Points:}
+\begin{enumerate}
+    \item Abschätzungs-Techniken für Software sind erfahrungsbasiert (Projektleiter bewerten den benötigten Aufwand) oder algorithmisch (Aufwand berechnet aus anderen abgeschätzten Projektparamtern)
+    \item COCOMO 2 - Kostenberechnungsmodell: algorithmisches Modell, das Projekt-, Produkt-, Hardware- und Personalattribute, sowie Produktgröße und -komplexität beachtet
+\end{enumerate}
