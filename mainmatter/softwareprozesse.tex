@@ -257,40 +257,61 @@ Umwandlen der Spezifikationen in ein ausführbares System.
   \caption{Testing bei plangesteuertem Software-Prozess}
 \end{figure}
 
+\subsection{Key Points:}
+\begin{enumerate}
+    \item Softwareprozesse sind Aktivitäten, die zur Entwicklung neuer Software gehören. Software-Prozessmodelle sind die abstrakten Repräsentationen dieser Prozesse. 
+    \item Prozessmodelle beschreiben die Organisation von Softwareprozessen. (Wasserfall, inkrementelle Entwicklung, Wiederverwertungs-orientierte Entwicklung) 
+    \item Requirements Engineering: Entwicklung einer Software-Spezifikation 
+    \item Design und Implementierung wandeln die Anforderungs-Spezifikation in ein ausführebares Softwaresystem um. 
+    \item Validierung: Erfüllung der Sytem-Spezifikation und der Kundenwünsche wird überprüft
+    \item Evolution: Veränderung existierender Systeme zur Erfüllung 
+\end{enumerate}
+
+
 \subsection{Software-Evolution}
 \begin{itemize}
     \item Software ist von Natur aus flexibel und kann sich verändern
     \item Anforderungen änder sich durch wirtschafliche Umstände, die unterstützende Software muss sich mit verändern
     \item Durch die Wiederverwendung von Komponenten für neue Systeme sind Softwareentwicklung und Evolution nicht mehr vollständig unterscheidbar
 \end{itemize}
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{mainmatter/pics/evolution.png}
     \caption{Software-Evolution}
 \end{figure}
 
+
+\section{Bewältigung von Veränderungen}
+Veränderungen führen zu Nacharbeit. Die Veränderungskosten beinhalten Nacharbeit und Implementierung neuer Funktionalitäten
+\subsection{Kostenreduzierung}
+\begin{itemize}
+    \item \textbf{Change avoidance:} vorwegnehmen möglicher Veränderungen
+    \item \textbf{Change tolerance:} Gesamtprozess kann Veränderungen leicht umsetzen
+\end{itemize}
 \subsection{Prototyping}
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{mainmatter/pics/prototyping.png}
     \caption{Prototyping}
 \end{figure}
 \begin{itemize}
-    \item eine erste Version eines Softwaresystems um Konzepte zu demonstrieren und Erkenntnisse zu gewinnen
+    \item Demonstration von Konzepten und ausprobieren von Designmöglichkeiten
     \item Wird benutzt, wenn:
     \begin{itemize}
         \item Requirements-Engineering Prozess hilft ein Prototyp bei der Ermittlung und Validierung der Systemanforderungen
-        \item Beim Systementwurf kann der Prototyp verwendet werden, um einzelne Softwarelösungen zu utnersuchen und den Entwurf der Benutzeroberfläche zu unterstützen 
+        \item Beim Systementwurf kann der Prototyp verwendet werden, um einzelne Softwarelösungen zu untersuchen und den Entwurf der Benutzeroberfläche zu unterstützen 
     \end{itemize}
 \end{itemize}
 
-
+\qquad\\
+\qquad\\
 \subsection{Spiralmodell nach Boehm:}
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \includegraphics[width=12.5cm]{mainmatter/pics/boehm.png}
-    \caption{Prototyping}
+    \includegraphics[width=0.75\textwidth]{mainmatter/pics/boehm.png}
+    \caption{Spiralmodell nach Boehm}
 \end{figure}
+
 \begin{itemize}
     \item Softwareprozess wird als Spirale dargestellt, anstatt als eine Folge von Aktivitäten 
     \item Jede Windung steht für eine Phase des Prozesses
@@ -303,6 +324,7 @@ Umwandlen der Spezifikationen in ein ausführbares System.
         \item Entwicklungnd Validierung
         \item Planung
     \end{itemize}
+    \item \textbf{Risiken} werden während dem Prozess angesprochen und geklärt
     \item Nutzung:
     \begin{itemize}
         \item sehr einflussreich um Menschen zu helfen über Iterationen in Softwareprozessen und die Eifnührung des risikoorientierten Ansatzes für die Entwicklung nach zu denken
@@ -314,16 +336,21 @@ Umwandlen der Spezifikationen in ein ausführbares System.
     \end{itemize} 
 \end{itemize}
 
+
+
+
+
 \subsection{Rational Unified Process (RUP):}
 \begin{itemize}
+    \item Generisches Verfahren
     \item abgeleitet von der Arbeit an der UML
-    \item Vereinigt Elemente aus allen allgemeinen \textbf{Vorgehensmodellen} (Wasserfall, inkrementelle Entwicklung und wiederverwendungsorienteirte SE)
+    \item Vereinigt Elemente aus allen allgemeinen/generischen \textbf{Vorgehensmodellen} (Wasserfall, inkrementelle Entwicklung und wiederverwendungsorienteirte SE)
     \item veranschaulicht empfohlene Vorgehensweisen für Spezifikation und Entwurf
     \item unterstützt Entwicklung von Prototypen
     \item RUP wird aus drei Perspektiven beschrieben
     \begin{itemize}
         \item \textbf{dynamische Perspektive:}\\
-        die die Phasen des Modells zeitlich darstellt
+        zeigt Entwicklungsphasen über die Zeit
         \item \textbf{statische Perspektive:}\\
         die die ausgeführten Prozessaktivitäten darstellt
         \item \textbf{praxisbezogene Perspektive:}\\ die die während des Prozesses empfohlene Vorgehensweise vorschlägt
@@ -356,4 +383,12 @@ Umwandlen der Spezifikationen in ein ausführbares System.
             \item Verwaltung der Softwareveränderungen mithilfe eines Änderungsmanagementsystems
         \end{itemize}
     \end{enumerate}
+\end{itemize}
+
+\subsection{Key Points}
+\begin{itemize}
+\item Prozesse sollten Verfahren für den Umgang mit Veränderungen einbeziehen
+\item Iterative Entwicklung und Auslieferung: Veränderungen können umgesetzt werden, ohne das Gesamtsystem zu beeinträchtigen
+    \item Boehms Spiralmodell nimmt Rücksicht auf Risiken und Neuplanungen/Überarbeitungen
+    \item RUP ist ein modernes allgemines Vorgehensmodell, das zwar in Phasen unterteil ist \textbf{(Konzeption, Entwurf, Konstruktion und ÜBergabe)}, jedoch die Aktivitäten (Anforderungsanalyse, Analyse und Entwurf) von den Phasen trennt
 \end{itemize}
